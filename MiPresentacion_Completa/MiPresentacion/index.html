@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi presentación personal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#inicio">Mi presentación</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#pasatiempos">Pasatiempos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#intereses">Intereses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#horario">Horario</a></li>
+          <li class="nav-item"><a class="nav-link" href="#musica">Música</a></li>
+          <li class="nav-item"><a class="nav-link" href="#juegos">Juegos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Presentación y carrusel -->
+  <header id="inicio" class="container py-5">
+    <div class="text-center mb-4">
+      <p class="eyebrow">UN POCO SOBRE MÍ</p>
+      <h1>¡Bienvenido a mi mundo!</h1>
+      <p class="lead">Deportes, música, videojuegos y cosas que me gusta aprender.</p>
+    </div>
+
+    <div id="carruselPersonal" class="carousel slide shadow" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carruselPersonal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Vóley"></button>
+        <button type="button" data-bs-target="#carruselPersonal" data-bs-slide-to="1" aria-label="Fútbol"></button>
+        <button type="button" data-bs-target="#carruselPersonal" data-bs-slide-to="2" aria-label="Música"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/voley.svg" class="d-block w-100" alt="Ilustración de voleibol">
+          <div class="carousel-caption"><h2>Vóley</h2><p>Un deporte que disfruto.</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/futbol.svg" class="d-block w-100" alt="Ilustración de fútbol">
+          <div class="carousel-caption"><h2>Fútbol</h2><p>Pasión por el deporte.</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/musica.svg" class="d-block w-100" alt="Ilustración de música">
+          <div class="carousel-caption"><h2>Escuchar música</h2><p>Una de mis formas favoritas de pasar el tiempo.</p></div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carruselPersonal" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carruselPersonal" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Pasatiempos no productivos -->
+    <section id="pasatiempos" class="container section-space">
+      <div class="section-heading">
+        <p class="eyebrow">TIEMPO LIBRE</p>
+        <h2>Mis pasatiempos</h2>
+        <p>Actividades que hago para distraerme y divertirme.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="info-card h-100">
+            <div class="card-icon">🎧</div>
+            <h3>Escuchar música</h3>
+            <p>Me gusta escuchar música en mis ratos libres y descubrir canciones que me gustan.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="info-card h-100">
+            <div class="card-icon">🎮</div>
+            <h3>Videojuegos</h3>
+            <p>Disfruto jugar videojuegos, especialmente Tekken y Overwatch.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="info-card h-100">
+            <div class="card-icon">🏐</div>
+            <h3>Deportes</h3>
+            <p>Me gusta el vóley y el fútbol, y también disfruto del básquetbol.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intereses productivos -->
+    <section id="intereses" class="section-tint section-space">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">CRECIMIENTO PERSONAL</p>
+          <h2>Mis intereses productivos</h2>
+          <p>Temas y actividades que me ayudan a aprender y mejorar.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="info-card h-100">
+              <div class="card-icon">💻</div>
+              <h3>Programación</h3>
+              <p>Aprender a crear páginas web, programas y soluciones mediante código.</p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="info-card h-100">
+              <div class="card-icon">🖥️</div>
+              <h3>Tecnología</h3>
+              <p>Conocer herramientas, aplicaciones y novedades del mundo tecnológico.</p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="info-card h-100">
+              <div class="card-icon">📚</div>
+              <h3>Aprender</h3>
+              <p>Estudiar, practicar y desarrollar nuevas habilidades para mi futuro.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Horario creado en HTML, con aspecto de hoja de cálculo -->
+    <section id="horario" class="container section-space">
+      <div class="section-heading">
+        <p class="eyebrow">ORGANIZACIÓN</p>
+        <h2>Mi horario semanal</h2>
+        <p>Una tabla de actividades con estilo de hoja de cálculo.</p>
+      </div>
+      <div class="table-responsive schedule-wrap">
+        <table class="table table-bordered table-hover text-center align-middle mb-0">
+          <thead>
+            <tr>
+              <th>Hora</th><th>Lunes</th><th>Martes</th><th>Miércoles</th>
+              <th>Jueves</th><th>Viernes</th><th>Sábado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th>08:00 - 10:00</th><td>Estudio</td><td>Estudio</td><td>Estudio</td><td>Estudio</td><td>Estudio</td><td>Descanso</td></tr>
+            <tr><th>10:00 - 12:00</th><td>Universidad</td><td>Universidad</td><td>Universidad</td><td>Universidad</td><td>Universidad</td><td>Tiempo libre</td></tr>
+            <tr><th>14:00 - 16:00</th><td>Proyectos</td><td>Proyectos</td><td>Proyectos</td><td>Proyectos</td><td>Proyectos</td><td>Videojuegos</td></tr>
+            <tr><th>18:00 - 20:00</th><td>Deporte</td><td>Estudio</td><td>Deporte</td><td>Estudio</td><td>Deporte</td><td>Música</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small text-secondary mt-2">Horario de ejemplo: modifica las actividades y horas para que coincidan con tu rutina real.</p>
+    </section>
+
+    <!-- Música -->
+    <section id="musica" class="section-tint section-space">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">LO QUE ESCUCHO</p>
+          <h2>Mi música favorita</h2>
+        </div>
+        <div class="row g-3">
+          <div class="col-6 col-md-3"><div class="music-item">🎵<span>Kevis y Mayky</span></div></div>
+          <div class="col-6 col-md-3"><div class="music-item">🎶<span>Back to the 90s</span></div></div>
+          <div class="col-6 col-md-3"><div class="music-item">🎧<span>Time Impale</span></div></div>
+          <div class="col-6 col-md-3"><div class="music-item">🎼<span>Loser</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Videojuegos -->
+    <section id="juegos" class="container section-space">
+      <div class="section-heading">
+        <p class="eyebrow">MODO JUEGO</p>
+        <h2>Mis videojuegos favoritos</h2>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-5">
+          <article class="game-card h-100">
+            <div class="game-symbol">🥋</div>
+            <h3>Tekken</h3>
+            <p>Un juego de lucha que me gusta por sus personajes y combates.</p>
+          </article>
+        </div>
+        <div class="col-md-5">
+          <article class="game-card h-100">
+            <div class="game-symbol">⚡</div>
+            <h3>Overwatch</h3>
+            <p>Un videojuego de acción en equipo con diferentes héroes y habilidades.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frase característica -->
+    <section class="container section-space">
+      <div class="quote-box text-center">
+        <p class="eyebrow">MI FRASE CARACTERÍSTICA</p>
+        <h2>“A mi ritmo, pero sin detenerme.”</h2>
+        <p>Siempre hay algo nuevo que aprender y una meta por alcanzar.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página: reemplaza los enlaces por tus perfiles -->
+  <footer class="footer text-center">
+    <div class="container">
+      <h2>Mis redes sociales</h2>
+      <p class="mb-3">Puedes encontrarme en:</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+      </div>
+      <p class="copyright">© 2026 Mi presentación personal</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
